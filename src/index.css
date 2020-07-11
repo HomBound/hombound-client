@@ -1,0 +1,19 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  color: rgb(35, 35, 35);
+  font-family: sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+}
