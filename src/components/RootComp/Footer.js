@@ -1,7 +1,7 @@
 import React from "react";
 import '../../Assets/theme/css/style.css';
 import '../../Assets/mobirise-icons/mobirise-icons.css';
-import "../../Assets/n/mobirise/css/mbr-additional.css";
+
 import "../../Assets/bootstrap/css/bootstrap.min.css";
 import "../../Assets/bootstrap/css/bootstrap-grid.min.css";
 import "../../Assets/bootstrap/css/bootstrap-reboot.min.css";
@@ -12,7 +12,7 @@ import '../../Assets/socicon/css/styles.css';
 
 const Footer = props => (
 
-<section once="footers" class="cid-s4p7X8UtHA" id="footer7-9">
+<section once="footers" class="footer" id="footer7-9">
     <div class="container">
         <div class="row row-links">
                     <ul class="foot-menu">
