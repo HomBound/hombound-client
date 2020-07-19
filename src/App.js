@@ -4,7 +4,6 @@ import { Route } from "react-router-dom";
 import CreateAccount from "./components/account/CreateAccount";
 import MyAccount from "./components/account/MyAccount";
 import SignIn from "./components/account/SignIn";
-
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HomePage from "./components/homepage/HomePage";
