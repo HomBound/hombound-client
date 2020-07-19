@@ -13,7 +13,7 @@ import { Steps1 , Steps2, Steps3} from "./Steps";
  
 
 
-const HomeContent1 = props => (
+const StepHolder = props => (
 
 <section class="step2 cid-s4p8wEMWao" id="step2-e">
     <div class="container">
@@ -72,4 +72,4 @@ const HomeContent1 = props => (
 </section>
 );
 
-export default HomeContent1;
+export default StepHolder;
