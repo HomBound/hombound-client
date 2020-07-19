@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Form.css";
 import { API_URL } from "../../constants";
+import Loader from "react-loader-spinner";
 
 class CreateAccount extends Component {
   state = {
@@ -26,6 +27,7 @@ class CreateAccount extends Component {
 
   submitForm = async (e) => {
     e.preventDefault();
+    this.setState({ loading: true });
     const {
       firstName,
       lastName,
@@ -39,6 +41,7 @@ class CreateAccount extends Component {
       state,
     } = this.state;
 
+    // TODO: add form validation
     const endpoint = `${API_URL}/users/create`;
 
     const user = {
@@ -47,7 +50,7 @@ class CreateAccount extends Component {
       username,
       password,
       email,
-      volunteer,
+      volunteer: volunteer === "on",
       address,
       city,
       state,
@@ -58,9 +61,14 @@ class CreateAccount extends Component {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(user),
     };
-    const response = await fetch(endpoint, options);
-    let data = await response.json();
-    this.setState({ user: data });
+    try {
+      const response = await fetch(endpoint, options);
+      let data = await response.json();
+      this.setState({ user: data, loading: false });
+      this.props.history.push("/my-account");
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   render() {
@@ -147,6 +155,14 @@ class CreateAccount extends Component {
           <button className="form--btn" type="submit">
             Submit
           </button>
+          <Loader
+            visible={this.state.loading}
+            type="Circles"
+            color="rgb(93, 193, 240)"
+            height={100}
+            width={100}
+            className="form--spinner"
+          />
         </div>
       </form>
     );
