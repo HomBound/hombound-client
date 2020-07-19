@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Form.css";
+import "../Form.css";
 import { API_URL } from "../../constants";
 import Loader from "react-loader-spinner";
 

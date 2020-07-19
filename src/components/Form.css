@@ -22,6 +22,9 @@
   width: 30rem;
   padding: 1rem 2rem;
 }
+.single-input {
+  grid-column: 1/3;
+}
 .form--input:active {
   border: 1px solid;
   outline: none;
