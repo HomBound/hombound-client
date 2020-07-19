@@ -46,7 +46,7 @@ const StepHolder = props => (
                         </h3>
                     </div>          
                     <div class="step-text-content align-center">
-                        <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5">Create Request with HOMEBOUND</h4>
+                        <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5">Create Request with HOMBOUND</h4>
                         <p class="mbr-step-text mbr-fonts-style display-7">
                         Sign in into your account and submit your request, we will match you with a fellow member.</p>
                     </div>
