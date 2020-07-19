@@ -1,8 +1,20 @@
 import React from "react";
+import '../../Assets/mobirise-icons/mobirise-icons.css';
 
+
+
+import "../../Assets/bootstrap/css/bootstrap.min.css";
+import "../../Assets/bootstrap/css/bootstrap-grid.min.css";
+import "../../Assets/bootstrap/css/bootstrap-reboot.min.css";
+import "../../Assets/bootstrap/css/bootstrap.min.css";
+import '../../Assets/socicon/css/styles.css';
+import "../../Assets/theme/css/style1.css";
 
 const Banner = props => (
-            <section 
+            
+
+
+<section 
                 class="header6 cid-s4p5fUANN9 mbr-fullscreen" 
                 data-bg-video="https://www.youtube.com/watch?v=rdFk-qjM3AU" 
                 id="header6-4">
@@ -23,36 +35,35 @@ const Banner = props => (
                                'min-height': '100%', 'left': '0px', 'top': '0px', 'overflow': 'hidden', 'opacity': '1', 
                                'transition-property': 'opacity', 'transition-duration': '2000ms'}}>
                     
-                        <iframe 
-                        
-                            id="iframe_YTP_1595119813490" 
-                            class="playerBox" 
-                            style={{'position': 'absolute', 'z-index': '0', 'width': '1467px', 'height': '825px', 
-                                'top': '0px', 'left': '0px', 'overflow': 'hidden', 'opacity': '1', 'user-select': 'none',
-                                'margin-top': '0px', 'margin-left': '-307px', 'max-width': 'initial', 
-                                'transition-property': 'opacity', 'transition-duration': '1000ms'}}
-                            frameborder="0" 
-                            allowfullscreen="1" 
-                            allow="accelerometer; autoplay;encrypted-media; gyroscope; picture-in-picture" 
-                            title="YouTube video player" 
-                            width="640" 
-                            height="360" 
-                            src="https://www.youtube.com/embed/rdFk-qjM3AU?modestbranding=1"
-                            autoplay="0"
-                            controls="0"
-                            showinfo="0"
-                            rel="0"
-                            enablejsapi="1"
-                            version="3"
-                            playerapiid="iframe_YTP_1595119813490"
-                            origin="*"
-                           
-                            wmode="transparent"
-                            iv_load_policy="3"
-                            html5="1"
-                            widgetid="1" 
-                            unselectable="on">
-                        </iframe>
+                    <iframe src='https://www.youtube.com/embed/rdFk-qjM3AU?modestbranding=1&mute=1&rel=0&autoplay=1&loop=1” frameborder=“0" allowfullscreen include></iframe>
+
+'
+                class="playerBox" 
+                style={{'position': 'absolute', 'z-index': '0', 'width': '1467px', 'height': '825px', 
+                        'top': '0px', 'left': '0px', 'overflow': 'hidden', 'opacity': '1', 'user-select': 'none',
+                        'margin-top': '0px', 'margin-left': '-307px', 'max-width': 'initial', 
+                        'transition-property': 'opacity', 'transition-duration': '1000ms', 'autoplay': '1'}}
+        frameborder="0" 
+        allowfullscreen="0" 
+        allow="accelerometer&autoplay"
+        title="YouTube video player" 
+        width="560" 
+        height="360" 
+        
+        controls="0"
+        showinfo="0"
+        rel="0"
+        enablejsapi="1"
+        version="3"
+        playerapiid="iframe_YTP_1595119813490"
+        origin="*"
+       
+        wmode="transparent"
+        iv_load_policy="3"
+        html5="1"
+        widgetid="1" 
+        unselectable="on"
+/>
                         <div 
                             class="YTPOverlay" 
                             style={{'position': 'absolute', 'top': '0px', 'left': '0px', 'width': '100%', 'height': '100%'}}>
@@ -79,9 +90,14 @@ const Banner = props => (
                 </div>
                 
             </section>
-        
         );
     
 
 
 export default Banner;
+
+
+/*
+
+
+*/
