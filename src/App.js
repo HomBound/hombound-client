@@ -12,6 +12,8 @@ import AboutUs from "./components/AboutUs";
 import RequestHomBound from "./components/hombounds/RequestHomBound";
 import MyHomBounds from "./components/hombounds/MyHomBounds";
 //import Account from "./components/Account";
+import ViewAvailableRequest from "./components/ViewAvailableRequest/ViewAvailableRequest";
+
 
 class App extends Component {
   constructor() {
@@ -86,8 +88,9 @@ class App extends Component {
           />
           <Route path="/AboutUs" component={AboutUs} />
           <Route path="/ContactUs" component={ContacUs} />
-
           <Route path="/" component={Footer} />
+          <Route path="/available-requests" render={ViewAvailableRequest} />
+
         </BrowserRouter>
       </nav>
     );

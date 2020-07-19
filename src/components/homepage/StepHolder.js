@@ -16,7 +16,7 @@ const StepHolder = props => (
 
 <section class="step2 cid-s4p8wEMWao" id="step2-e">
     <div class="container">
-        <h2 class="mbr-section-title pb-3 mbr-fonts-style align-center display-2"><strong>
+        <h2 class="mbr-section pb-3 mbr-fonts-style align-center display-2 "><strong>
         Steps
         </strong></h2>
         <h3 class="mbr-section-subtitle pb-5 mbr-fonts-style align-center display-5">
