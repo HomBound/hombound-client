@@ -2,7 +2,6 @@ import React from "react";
 import "./Style.css";
 
 import "../Assets/mobirise-icons/mobirise-icons.css";
-
 import "../Assets/bootstrap/css/bootstrap.min.css";
 import "../Assets/bootstrap/css/bootstrap-grid.min.css";
 import "../Assets/bootstrap/css/bootstrap-reboot.min.css";
@@ -44,9 +43,9 @@ const Header = (props) => (
           data-app-modern-menu="true"
         >
           <li className="nav-item">
-            <a className="nav-link link text-white display-4" href="/ContactUs">
+            <a className="nav-link link text-white display-4" href="/sign-in">
               <span className="mbri-home mbr-iconfont mbr-iconfont-btn"></span>
-              Contact us
+              Sign In
             </a>
           </li>
           <li className="nav-item">
