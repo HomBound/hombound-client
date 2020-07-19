@@ -20,7 +20,7 @@ const StepHolder = props => (
         Steps
         </strong></h2>
         <h3 class="mbr-section-subtitle pb-5 mbr-fonts-style align-center display-5">
-            Together we can overcome COVID<br/>If you are sick or are immunocompromised staying at home<br/>If You &nbsp;we are also here to help
+            Together We can overcome COVID<br/>if You are sick or immunocompromised staying at home<br/>&nbsp;We are here to Help
         </h3>
         <div class="step-container row justify-content-center">
             <div class="card col-12 col-md-4 separline">
@@ -31,7 +31,7 @@ const StepHolder = props => (
                         </h3>
                     </div>          
                     <div class="step-text-content align-center">
-                        <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5">Make you Wish List</h4>
+                        <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5">Make your Wish List</h4>
                         <p class="mbr-step-text mbr-fonts-style display-7">
                         Make a detailed list of all the articles you need including the places where these products can be found.</p>
                     </div>
@@ -46,7 +46,7 @@ const StepHolder = props => (
                         </h3>
                     </div>          
                     <div class="step-text-content align-center">
-                        <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5">Create Request with HOMEBOUND</h4>
+                        <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5">Create Request with HOMBOUND</h4>
                         <p class="mbr-step-text mbr-fonts-style display-7">
                         Sign in into your account and submit your request, we will match you with a fellow member.</p>
                     </div>
@@ -61,8 +61,8 @@ const StepHolder = props => (
                         </h3>
                     </div>          
                     <div class="step-text-content align-center">
-                        <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5">Get Good Delivered</h4>
-                        <p class="mbr-step-text mbr-fonts-style display-7">Pickup the good at your door and stay at home to protect others.&nbsp;</p>
+                        <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5">Get Goods Delivered</h4>
+                        <p class="mbr-step-text mbr-fonts-style display-7">Pickup goods at your door and stay at home to protect others.&nbsp;</p>
                     </div>
                 </div>
             </div>
