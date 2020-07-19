@@ -23,25 +23,6 @@ const ZipHolder = props => (
                         </div>
                     </div>
                 </form>
-                <div class = "collumn">
-                <span class="gdpr-block">
-                        <label>
-                            <span class="textGDPR display-7" style={{'color': '#a7a7a7'}}>
-                                <input type="checkbox" name="gdpr" required=""></input>
-                                <a>   </a>By continuing you agree to our 
-                                    <a style={{'color': '#149dcc', 'text-decoration': 'none' }} >
-                                     Terms of Service
-                                    </a>
-                                    and 
-                                    <a style={{'color': '#149dcc', 'text-decoration': 'none'}}>
-                                    Privacy Policy
-                                    </a>.
-                            </span>
-                        </label>
-                    </span>
-
-                </div>
-                
             </div>
         </div>
     </div>
