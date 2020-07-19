@@ -3,8 +3,8 @@ import { BrowserRouter } from "react-router-dom";
 import { Route } from "react-router-dom";
 
 
-import Header from "./components/rootcomp/Header";
-import Footer from "./components/rootcomp/Footer";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import HomePage from "./components/homepage/HomePage";
 import ContacUs from "./components/contact/ContactUs";
 import AboutUs from "./components/about/AboutUs";
