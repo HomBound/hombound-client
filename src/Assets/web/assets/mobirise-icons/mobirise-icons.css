@@ -10,7 +10,7 @@
   font-display: swap;
 }
 
-[className^="mbri-"], [className*=" mbri-"] {
+[classNameName^="mbri-"], [classNameName*=" mbri-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: MobiriseIcons !important;
   speak: none;
