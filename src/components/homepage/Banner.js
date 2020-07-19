@@ -1,11 +1,7 @@
 import React from "react";
 
 
-class Banner extends React.Component {
-    
-    render() {
-        
-        return (
+const Banner = props => (
             <section 
                 class="header6 cid-s4p5fUANN9 mbr-fullscreen" 
                 data-bg-video="https://www.youtube.com/watch?v=rdFk-qjM3AU" 
@@ -85,8 +81,8 @@ class Banner extends React.Component {
             </section>
         
         );
-    };
-}
+    
+
 
 export default Banner;
 
@@ -105,20 +101,4 @@ export default Banner;
   <link rel="preload" as="style" href="../../Assets/n/mobirise/css/mbr-additional.css"/>
   <link rel="stylesheet" href="../../Assets/n/mobirise/css/mbr-additional.css" type="text/css"/>
 
-<script src="../../Assets/n/web/assets/jquery/jquery.min.js"></script>
-<script src="../../Assets/n/popper/popper.min.js"></script>
-<script src="../../Assets/n/smoothscroll/smooth-scroll.js"></script>
-            
-            <script src="../../Assets/n/dropdown/js/nav-dropdown.js"></script>
-            <script src="../../Assets/n/dropdown/js/navbar-dropdown.js"></script>
-            <script src="../../Assets/n/touchswipe/jquery.touch-swipe.min.js"></script>
-            <script src="../../Assets/n/sociallikes/social-likes.js"></script>
-            <script src="../../Assets/n/tether/tether.min.js"></script>
-            
-            <script src="../../Assets/n/formoid/formoid.min.js"></script>
-            <script src="../../Assets/n/theme/js/script.js"></script>
-            <script src="../../Assets/n/ytplayer/jquery.mb.ytplayer.min.js"></script>
-            <script src="../../Assets/n/vimeoplayer/jquery.mb.vimeo_player.js"></script>
-            <script src="../../Assets/bootstrap/js/bootstrap.min.js"></script>
-            <script src="../../Assets/n/datatables/jquery.data-tables.min.js"></script>
 */

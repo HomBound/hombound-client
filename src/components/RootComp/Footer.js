@@ -12,6 +12,7 @@ import '../../Assets/socicon/css/styles.css';
 
 const Footer = props => (
 
+<footer>
 <section once="footers" class="footer" id="footer7-9">
     <div class="container">
         <div class="row row-links">
@@ -76,6 +77,7 @@ const Footer = props => (
             </div>
         </div>
     </section>
+    </footer>
 )
 
 
