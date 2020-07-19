@@ -16,7 +16,7 @@ function App() {
       <BrowserRouter>
         <Route path="/" render={Header} />
         <Route exact path="/" render={HomePage} />
-        <Route path="/ContactUs" render={ContacUs} />
+        <Route path="/ContactUs" render={ContacUs}/>
         <Route path="/AboutUs" render={AboutUs} />
         <Route path="/Account" render={Account} />
         <Route path="/" render={Footer} />
