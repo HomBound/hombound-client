@@ -1,6 +1,6 @@
 import React from "react";
 import '../../Assets/mobirise-icons/mobirise-icons.css';
-import Video, { Player } from 'video-react';
+
 
 
 import "../../Assets/bootstrap/css/bootstrap.min.css";
