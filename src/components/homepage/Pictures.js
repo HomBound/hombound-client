@@ -24,10 +24,6 @@ const Pictures = props => (
                     <div class="card-img">
                         <img src={image3} alt="Mobirise" title=""/>
                     </div>
-                <div class="card-box">
-                    <h4 class="card-title pb-3 mbr-fonts-style display-7">
-                        No Social Distancing</h4>
-                </div>
             </div>
         </div>
 
@@ -36,9 +32,6 @@ const Pictures = props => (
                 <div class="card-img">
                     <img src={image1} alt="Mobirise" title=""/>
                 </div>
-                <div class="card-box ">
-                    <h4 class="card-title pb-3 mbr-fonts-style display-7">Wash your Hands</h4>
-                </div>
             </div>
         </div>
 
@@ -46,11 +39,6 @@ const Pictures = props => (
             <div class="card-wrapper">
                 <div class="card-img">
                     <img src={image2} alt="Mobirise" title=""/>
-                </div>
-                <div class="card-box">
-                    <h4 class="card-title pb-3 mbr-fonts-style display-7">
-                        Stay Home</h4>
-                    
                 </div>
             </div>
         </div>
