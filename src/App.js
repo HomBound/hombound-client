@@ -7,7 +7,7 @@ function App() {
   return (
     <nav className="navigation">
       <BrowserRouter>
-        <Route path="/" render={(props) => <Header {...props} />} />
+        <Route path="" render={(props) => <Header {...props} />} />
       </BrowserRouter>
     </nav>
   );
