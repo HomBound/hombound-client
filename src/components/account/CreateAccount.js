@@ -12,8 +12,6 @@ class CreateAccount extends Component {
     verifyPassword: "",
     email: "",
     volunteer: false,
-    // TODO: active might have to handled only on the backend
-    active: false,
     address: "",
     city: "",
     state: "",
