@@ -34,29 +34,21 @@ class SignIn extends Component {
     };
     try {
       const response = await fetch(endpoint, options);
-      console.log("hello status " + response.status);
-
       if (response.status === 500) {
         console.log("User does not exist!");
         this.setState({
           error: "User does not exist!",
           loading: false,
         });
-      } else if (JSON.stringify(response) === JSON.stringify({})) {
-        console.log("Password is incorrect!");
-        this.setState({
-          error: "Password is incorrect!",
-          loading: false,
-        });
       } else {
         let data = await response.json();
-        console.log("hello" + data);
         this.setState({ user: data, loading: false });
+        this.props.handleLoginStatus(data);
         this.props.history.push("/my-account");
       }
     } catch (err) {
       this.setState({
-        error: "User does not exist!",
+        error: "Password is incorrect!",
         loading: false,
       });
       console.error(err);
@@ -95,7 +87,8 @@ class SignIn extends Component {
             className="form--spinner"
           />
           <div className="form-error">
-          {!this.state.loading ? this.state.error : ""}</div>
+            {!this.state.loading ? this.state.error : ""}
+          </div>
         </div>
       </form>
     );

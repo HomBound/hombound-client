@@ -31,7 +31,7 @@ class CreateAccount extends Component {
       lastName,
       username,
       password,
-      verifyPassword,
+      // verifyPassword,
       email,
       volunteer,
       address,
