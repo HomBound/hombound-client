@@ -1,7 +1,5 @@
 import React from "react";
-import '../../Assets/mobirise-icons/mobirise-icons.css';
-import "../../Assets/bootstrap/css/bootstrap.min.css";
-import "./Style.css";
+
 
 const Header = props => (
     <section class="menu Header" once="menu" id="menu1-0">
@@ -52,7 +50,5 @@ const Header = props => (
         </nav>
     </section>
 )
-    
 
 export default Header;
-
