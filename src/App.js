@@ -5,6 +5,10 @@ import { Route } from "react-router-dom";
 import CreateAccount from "./components/account/CreateAccount";
 import MyAccount from "./components/account/MyAccount";
 import SignIn from "./components/account/SignIn";
+import Footer from "./components/Footer";
+import HomePage from "./components/homepage/HomePage";
+import ContacUs from "./components/Contact/ContactUs";
+import AboutUs from "./components/About/AboutUs";
 
 class App extends Component {
   constructor() {
@@ -53,6 +57,7 @@ class App extends Component {
       <nav className="navigation">
         <BrowserRouter>
           <Route path="/" render={(props) => <Header {...props} />} />
+          <Route exact path="/" render={HomePage} />
           <Route path="/create-account" component={CreateAccount} />
           <Route
             path="/sign-in"
@@ -64,6 +69,9 @@ class App extends Component {
             path="/my-account"
             render={(props) => <MyAccount {...props} user={this.state.user} />}
           />
+          <Route path="/AboutUs" render={AboutUs} />
+          <Route path="/ContactUs" render={ContacUs} />
+          <Route path="/" render={Footer} />
         </BrowserRouter>
       </nav>
     );
