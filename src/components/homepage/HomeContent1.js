@@ -9,7 +9,7 @@ import '../../Assets/socicon/css/styles.css';
 import "../RootComp/Style.css";
 import "../../Assets/mobirise/css/mbr-additional.css";
 import "../../Assets/theme/css/style.css";
-import Steps, { Steps1 , Steps2, Steps3} from "./Steps";
+import { Steps1 , Steps2, Steps3} from "./Steps";
  
 
 
