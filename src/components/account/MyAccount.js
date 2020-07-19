@@ -15,8 +15,12 @@ const MyAccount = (props) => {
           <Link className="account--link">Ready To Help</Link>
         ) : (
           <>
-            <Link className="account--link">Create a Request</Link>
-            <Link className="account--link">View My Requests</Link>
+            <Link to="/request-hombound" className="account--link">
+              Create a Request
+            </Link>
+            <Link to="/my-hombounds" className="account--link">
+              View My Requests
+            </Link>
           </>
         )}
       </div>

@@ -61,7 +61,6 @@ class RequestHomBound extends Component {
     try {
       const response = await fetch(endpoint, options);
       let data = await response.json();
-      console.log(data);
       this.setState({
         item: data,
         loading: false,
@@ -80,6 +79,7 @@ class RequestHomBound extends Component {
   doneRequest = async () => {
     this.setState({ loading: true });
     const endpoint = `${API_URL}/requests/${this.state.request.id}/submit`;
+    console.log(endpoint);
     const options = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -92,6 +92,7 @@ class RequestHomBound extends Component {
         request: data,
         loading: false,
       });
+      this.props.history.push("/my-hombounds");
     } catch (err) {
       console.error(err);
       this.setState({
@@ -168,7 +169,6 @@ class RequestHomBound extends Component {
               <option value="Medicine">Medicine</option>
               <option value="Medicine">Other</option>
             </select>
-            {console.log(this.state.category)}
             <input
               type="number"
               id="quantity"
@@ -193,7 +193,9 @@ class RequestHomBound extends Component {
             </div>
             <div className="form--two-btn">
               <button className="form--btn big-btn">Review</button>{" "}
-              <button className="form--btn big-btn">Submit</button>
+              <button className="form--btn big-btn" onClick={this.doneRequest}>
+                Submit
+              </button>
             </div>
           </div>
         </form>

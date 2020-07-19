@@ -49,7 +49,10 @@ const Header = (props) => (
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link link text-white display-4" href="/Account">
+            <a
+              className="nav-link link text-white display-4"
+              href="/my-account"
+            >
               <span className="mbri-users mbr-iconfont mbr-iconfont-btn"></span>
               Account
             </a>

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { API_URL } from "../../constants";
 import "../account/Account.css";
+import HomBoundCard from "./HomBoundCard";
+import "./HomBound.css";
 
 const MyHomBounds = (props) => {
   const [myRequests, setMyRequests] = useState([]);
@@ -18,13 +20,10 @@ const MyHomBounds = (props) => {
   return (
     <div>
       <h1 className="account--header">My Requests</h1>
-      <div>
-        {
-          myRequests.map((request) => request.store)
-          // .map((movie) => (
-          //   <MovieCard movie={movie} key={movie.id} />
-          // ))
-        }
+      <div className="hombound-cards">
+        {myRequests.map((request) => (
+          <HomBoundCard request={request} key={request.id} />
+        ))}
       </div>
     </div>
   );
