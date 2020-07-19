@@ -2,9 +2,9 @@ import React from "react";
 import "./Style.css";
 
 
-function Header () {
-    return (
-<section class="menu Header">
+const Header = props => (
+    
+    <section class="menu Header">
     <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
         <button 
             class="navbar-toggler navbar-toggler-right" 
@@ -51,9 +51,7 @@ function Header () {
         </div>
     </nav>
 </section>
-    );
-}
-    
+  );
 
 
 export default Header;
