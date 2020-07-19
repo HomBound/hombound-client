@@ -4,11 +4,10 @@ import "../../Assets/bootstrap/css/bootstrap.min.css";
 import "../../Assets/bootstrap/css/bootstrap-grid.min.css";
 import "../../Assets/bootstrap/css/bootstrap-reboot.min.css";
 import "../../Assets/bootstrap/css/bootstrap.min.css";
-import "../rootComp/Style.css";
 import '../../Assets/socicon/css/styles.css';
-import "../rootComp/Style.css";
 import "../../Assets/mobirise/css/mbr-additional.css";
-import "../../Assets/theme/css/style.css";
+import "../../Assets/theme/css/style1.css";
+
 import { Steps1 , Steps2, Steps3} from "./Steps";
  
 
