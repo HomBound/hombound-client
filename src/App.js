@@ -18,7 +18,6 @@ function App() {
         <Route path="/AboutUs" render={AboutUs} />
         <Route path="/Account" render={Account} />
         <Route path="/" render={Footer} />
-        
       </BrowserRouter>
   
   );
