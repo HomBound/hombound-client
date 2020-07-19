@@ -1,5 +1,5 @@
 import React from "react";
-import '../../Assets/n/theme/css/style.css';
+import '../../Assets/theme/css/style.css';
 import '../../Assets/mobirise-icons/mobirise-icons.css';
 import "../../Assets/n/mobirise/css/mbr-additional.css";
 import "../../Assets/bootstrap/css/bootstrap.min.css";
