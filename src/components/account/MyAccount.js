@@ -14,10 +14,14 @@ const MyAccount = (props) => {
         {props.user.volunteer ? (
           <Link className="account--link">Ready To Help</Link>
         ) : (
-          <div>
-            <Link>Create a Request</Link>
-            <Link>View My Requests</Link>
-          </div>
+          <>
+            <Link to="/request-hombound" className="account--link">
+              Create a Request
+            </Link>
+            <Link to="/my-hombounds" className="account--link">
+              View My Requests
+            </Link>
+          </>
         )}
       </div>
       <div className="account--grid">
