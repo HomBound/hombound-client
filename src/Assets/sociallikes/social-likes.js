@@ -290,7 +290,7 @@
 
             // Widget
             var widget = $('<div>', {
-                'class': getElementClassNames('widget', 'single')
+                'class': getElementclasss('widget', 'single')
             });
             var button = $(template(
                 '<div class="{buttonCls}">' +
@@ -298,8 +298,8 @@
                     '{title}' +
                 '</div>',
                 {
-                    buttonCls: getElementClassNames('button', 'single'),
-                    iconCls: getElementClassNames('icon', 'single'),
+                    buttonCls: getElementclasss('button', 'single'),
+                    iconCls: getElementclasss('icon', 'single'),
                     title: this.options.singleTitle
                 }
             ));
@@ -368,7 +368,7 @@
             var counterElem = this.widget.find('.' + classPrefix + 'counter_single');
             if (!counterElem.length) {
                 counterElem = $('<span>', {
-                    'class': getElementClassNames('counter', 'single')
+                    'class': getElementclasss('counter', 'single')
                 });
                 this.widget.append(counterElem);
             }
@@ -405,7 +405,7 @@
             if (!service) {
                 // class="facebook"
                 var node = this.widget[0];
-                var classes = node.classList || node.className.split(' ');
+                var classes = node.classList || node.class.split(' ');
                 for (var classIdx = 0; classIdx < classes.length; classIdx++) {
                     var cls = classes[classIdx];
                     if (services[cls]) {
@@ -456,7 +456,7 @@
 
             // Button
             var button = $('<span>', {
-                'class': this.getElementClassNames('button'),
+                'class': this.getElementclasss('button'),
                 'text': widget.text()
             });
             if (options.clickUrl) {
@@ -476,10 +476,10 @@
             }
 
             widget.removeClass(this.service);
-            widget.addClass(this.getElementClassNames('widget'));
+            widget.addClass(this.getElementclasss('widget'));
 
             // Icon
-            button.prepend($('<span>', {'class': this.getElementClassNames('icon')}));
+            button.prepend($('<span>', {'class': this.getElementclasss('icon')}));
 
             widget.empty().append(button);
             this.button = button;
@@ -510,15 +510,15 @@
             }
         },
 
-        getElementClassNames: function(elem) {
-            return getElementClassNames(elem, this.service);
+        getElementclasss: function(elem) {
+            return getElementclasss(elem, this.service);
         },
 
         updateCounter: function(number) {
             number = parseInt(number, 10) || 0;
 
             var params = {
-                'class': this.getElementClassNames('counter'),
+                'class': this.getElementclasss('counter'),
                 'text': number
             };
             if (!number && !this.options.zeroes) {
@@ -614,7 +614,7 @@
         });
     }
 
-    function getElementClassNames(elem, mod) {
+    function getElementclasss(elem, mod) {
         var cls = classPrefix + elem;
         return cls + ' ' + cls + '_' + mod;
     }
