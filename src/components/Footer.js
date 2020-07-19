@@ -1,5 +1,6 @@
 import React from "react";
 import "./Style.css";
+
 import '../Assets/mobirise-icons/mobirise-icons.css';
 
 import "../Assets/bootstrap/css/bootstrap.min.css";
@@ -78,6 +79,7 @@ const Footer = props => (
     </section>
     </footer>
 )
+
 
 
 export default Footer;
