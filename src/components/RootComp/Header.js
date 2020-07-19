@@ -1,12 +1,10 @@
 import React from "react";
-import '../../Assets/theme/css/style.css';
-import '../../Assets/web/assets/mobirise-icons/mobirise-icons.css';
-import "../../Assets/mobirise/css/mbr-additional.css";
-import "../../Assets/dropdown/css/style.css";
+import '../../Assets/mobirise-icons/mobirise-icons.css';
 import "../../Assets/bootstrap/css/bootstrap.min.css";
+import "./Style.css";
 
 const Header = props => (
-    <section class="menu cid-qTkzRZLJNu" once="menu" id="menu1-0">
+    <section class="menu Header" once="menu" id="menu1-0">
         <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <div class="hamburger">
