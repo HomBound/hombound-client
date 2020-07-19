@@ -108,6 +108,9 @@ h6,
 .mbr-section-title {
   font-style: normal;
   line-height: 1.2;
+  text-shadow: black 0.1em 0.1em 0.2em
+
+
 }
 
 .mbr-section-subtitle {
