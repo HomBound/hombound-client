@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import HomePage from "./components/homepage/HomePage";
 import ContacUs from "./components/ContactUs";
 import AboutUs from "./components/AboutUs";
+import ViewAvailableRequest from "./components/ViewAvailableRequest/ViewAvailableRequest";
 //import Account from "./components/Account";
 
 class App extends Component {
@@ -70,6 +71,7 @@ class App extends Component {
             path="/my-account"
             render={(props) => <MyAccount {...props} user={this.state.user} />}
           />
+          <Route path="/available-requests" render={ViewAvailableRequest} />
           <Route path="/AboutUs" render={AboutUs} />
           <Route path="/ContactUs" render={ContacUs} />
           <Route path="/" render={Footer} />
