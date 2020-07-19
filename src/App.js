@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Header from "./components/root/Header";
+import Header from "./components/Header";
 import { BrowserRouter } from "react-router-dom";
 import { Route } from "react-router-dom";
 import CreateAccount from "./components/account/CreateAccount";
