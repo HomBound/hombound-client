@@ -6,9 +6,9 @@ import { Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HomePage from "./components/homepage/HomePage";
-import ContacUs from "./components/contact/ContactUs";
-import AboutUs from "./components/about/AboutUs";
-import Account from "./components/account/Account";
+import ContacUs from "./components/ContactUs";
+import AboutUs from "./components/AboutUs";
+import Account from "./components/Account";
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
         <Route path="/Account" render={Account} />
         <Route path="/" render={Footer} />
       </BrowserRouter>
-  
+
   );
 }
 

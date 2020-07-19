@@ -10,7 +10,7 @@
   font-style: normal;
 }
 
-[classNameName^="mbrib-"], [classNameName*="mbrib-"] {
+[class^="mbrib-"], [class*="mbrib-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'mobirise-icons-bold' !important;
   speak: none;

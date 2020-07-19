@@ -417,13 +417,13 @@ var get_vimeo_videoID = function( url ) {
 								var classN = vimeo_player.opt.addRaster == "dot" ? "raster-dot" : "raster";
 								vimeo_player.overlay.addClass( vimeo_player.isRetina ? classN + " retina" : classN );
 							} else {
-								vimeo_player.overlay.removeClass( function( index, classNames ) {
+								vimeo_player.overlay.removeClass( function( index, classs ) {
 									// change the list into an array
-									var current_classes = classNames.split( " " ),
+									var current_classes = classs.split( " " ),
 										// array of classes which are to be removed
 										classes_to_remove = [];
 									jQuery.each( current_classes, function( index, class_name ) {
-										// if the classname begins with bg add it to the classes_to_remove array
+										// if the class begins with bg add it to the classes_to_remove array
 										if( /raster.*/.test( class_name ) ) {
 											classes_to_remove.push( class_name );
 										}

@@ -37,7 +37,7 @@
         XL: Infinity
     };
 
-    var ClassName = {
+    var class = {
         BACKDROP: 'dropdown-backdrop',
         DISABLED: 'disabled',
         OPEN: 'open',
@@ -48,7 +48,7 @@
         BASE: '.nav-dropdown',
         DROPDOWN: '.dropdown',
         DROPDOWN_MENU: '.dropdown-menu',
-        BACKDROP: '.' + ClassName.BACKDROP,
+        BACKDROP: '.' + class.BACKDROP,
         DATA_BUTTON: '[data-button]',
         DATA_TOGGLE: '[data-toggle="dropdown-submenu"]',
         FORM_CHILD: '.dropdown form'
@@ -136,7 +136,7 @@
                 $items.each(function(){
 
                     if ((deepSearch && !this.offsetWidth && !this.offsetHeight)
-                        || this.disabled || $(this).is(Selector.DATA_BUTTON) || $(this).hasClass(ClassName.DISABLED) || ~$.inArray(this, elements)) {
+                        || this.disabled || $(this).is(Selector.DATA_BUTTON) || $(this).hasclass(class.DISABLED) || ~$.inArray(this, elements)) {
                         return;
                     }
 
@@ -253,7 +253,7 @@
 
                     case ':opened':
                     case ':closed':
-                        if ((selector == ':opened') != $this.parent().hasClass(ClassName.OPEN))
+                        if ((selector == ':opened') != $this.parent().hasclass(class.OPEN))
                             return false;
                     case ':toggle':
                         if (!$this.is(Selector.DATA_TOGGLE))
@@ -314,12 +314,12 @@
     };
 
     NavDropdown.prototype.toggle = function(event) {        
-        if (this.disabled || $(this).hasClass(ClassName.DISABLED)) {
+        if (this.disabled || $(this).hasclass(class.DISABLED)) {
             return false;
         }
 
         var $parent = $(this.parentNode);
-        var isActive = $parent.hasClass(ClassName.OPEN);
+        var isActive = $parent.hasclass(class.OPEN);
         var isCollapsed = NavDropdown._isCollapsed( $(this).closest(Selector.BASE) );
 
         NavDropdown._clearMenus(
@@ -336,11 +336,11 @@
         }
 
         if ('ontouchstart' in document.documentElement
-            && !$parent.closest(Selector.DROPDOWN + '.' + ClassName.OPEN).length) {
+            && !$parent.closest(Selector.DROPDOWN + '.' + class.OPEN).length) {
         
             // if mobile we use a backdrop because click events don't delegate
             var dropdown = document.createElement('div');
-            dropdown.className = ClassName.BACKDROP;
+            dropdown.class = class.BACKDROP;
             $(dropdown).insertBefore( $(this).closest(Selector.BASE) );
             $(dropdown).on('click', NavDropdown._clearMenus);
 
@@ -358,7 +358,7 @@
         this.focus();
         this.setAttribute('aria-expanded', 'true');
 
-        $parent.toggleClass(ClassName.OPEN);
+        $parent.toggleclass(class.OPEN);
         $parent.trigger( $.Event(Event.SHOWN, relatedTarget) );
 
         return false;
@@ -384,7 +384,7 @@
 
             if (this === document) {
 
-                if ( $(event.target).is('a:not([disabled], .' + ClassName.DISABLED +  ')') ) {
+                if ( $(event.target).is('a:not([disabled], .' + class.DISABLED +  ')') ) {
                     collapseEvent = $.Event(Event.COLLAPSE, { relatedTarget: event.target })
                 } else  {
 
@@ -395,7 +395,7 @@
 
             } else {
 
-                if ($(event.target).hasClass(ClassName.BACKDROP)) {
+                if ($(event.target).hasclass(class.BACKDROP)) {
                     var $nextNode = $(event.target).next();
                     if ($nextNode.is(Selector.BASE) && NavDropdown._isCollapsed($nextNode)) {
                         return;
@@ -419,7 +419,7 @@
             var parent = toggles[i].parentNode;
             var relatedTarget = { relatedTarget: toggles[i] };
 
-            if (!$(parent).hasClass(ClassName.OPEN)) {
+            if (!$(parent).hasclass(class.OPEN)) {
                 continue;
             }
 
@@ -438,7 +438,7 @@
             toggles[i].setAttribute('aria-expanded', 'false');
 
             $(parent)
-                .removeClass(ClassName.OPEN)
+                .removeclass(class.OPEN)
                 .trigger( $.Event(Event.HIDDEN, relatedTarget) );
                 
         }
@@ -474,7 +474,7 @@
                 return;
             }
 
-            var toggle = $(event.target).parents(Selector.DROPDOWN + '.' + ClassName.OPEN)
+            var toggle = $(event.target).parents(Selector.DROPDOWN + '.' + class.OPEN)
                 .last().find('>' + Selector.DATA_TOGGLE);
             NavDropdown._clearMenus();
             toggle.trigger('focus');
@@ -557,7 +557,7 @@
     NavDropdown._isCollapsed = function(rootNode) {
         var match;
         if (rootNode.length) rootNode = rootNode[0];
-        return rootNode && (match = /navbar-toggleable-(xs|sm|md|lg|xl)/.exec(rootNode.className))
+        return rootNode && (match = /navbar-toggleable-(xs|sm|md|lg|xl)/.exec(rootNode.class))
             && (window.innerWidth < Breakpoints[ match[1].toUpperCase() ]);
     };
 
@@ -568,7 +568,7 @@
             
             var isCollapsed = NavDropdown._isCollapsed(this);
             
-            $(this).find(Selector.DROPDOWN).removeClass(ClassName.OPEN);
+            $(this).find(Selector.DROPDOWN).removeclass(class.OPEN);
             $(this).find('[aria-expanded="true"]').attr('aria-expanded', 'false');
 
             var backdrop = $(Selector.BACKDROP)[0];
@@ -576,16 +576,16 @@
                 backdrop.parentNode.removeChild(backdrop); // ???
             }
 
-            if (isCollapsed == $(this).hasClass(ClassName.SM)) {
+            if (isCollapsed == $(this).hasclass(class.SM)) {
                 return;
             }
 
             if (isCollapsed) {
-                $(this).addClass(ClassName.SM);
+                $(this).addclass(class.SM);
             } else {
-                $(this).removeClass(ClassName.SM);
+                $(this).removeclass(class.SM);
 
-                // $(this).removeClass(ClassName.SM + ' in'); /// ???
+                // $(this).removeclass(class.SM + ' in'); /// ???
                 // NavDropdown._clearMenus();
             }
 

@@ -22,7 +22,7 @@ const Header = props => (
             aria-expanded="false" 
             aria-label="Toggle navigation"
         >
-            <div className="hamburger">
+            <div class="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>

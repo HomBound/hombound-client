@@ -12,64 +12,64 @@ import "../Assets/theme/css/style1.css";
 const Footer = props => (
 
 <footer>
-<section once="footers" className="footer" id="footer7-9">
-    <div className="container">
-        <div className="row row-links">
-                    <ul className="foot-menu">
-                        <li className="foot-menu-item mbr-fonts-style display-7">
-                            <a className="text-white mbr-bold" href="/">About us</a>
+<section once="footers" class="footer" id="footer7-9">
+    <div class="container">
+        <div class="row row-links">
+                    <ul class="foot-menu">
+                        <li class="foot-menu-item mbr-fonts-style display-7">
+                            <a class="text-white mbr-bold" href="/">About us</a>
                         </li>
-                        <li className="foot-menu-item mbr-fonts-style display-7">
-                            <a className="text-white mbr-bold" href="/">
+                        <li class="foot-menu-item mbr-fonts-style display-7">
+                            <a class="text-white mbr-bold" href="/">
                             Become a Volunteer</a>
                         </li>
-                        <li className="foot-menu-item mbr-fonts-style display-7">
-                            <a className="text-white mbr-bold" href="/">Get In Touch</a>
+                        <li class="foot-menu-item mbr-fonts-style display-7">
+                            <a class="text-white mbr-bold" href="/">Get In Touch</a>
                         </li>
-                        <li className="foot-menu-item mbr-fonts-style display-7">
-                            <a className="text-white mbr-bold" href="/">Careers</a>
+                        <li class="foot-menu-item mbr-fonts-style display-7">
+                            <a class="text-white mbr-bold" href="/">Careers</a>
                         </li>
-                        <li className="foot-menu-item mbr-fonts-style display-7">
-                            <a className="text-white mbr-bold" href="/" target = "_blank">Work</a>
+                        <li class="foot-menu-item mbr-fonts-style display-7">
+                            <a class="text-white mbr-bold" href="/" target = "_blank">Work</a>
                         </li></ul>
                 </div>
-            <div className="media-container-row align-center mbr-white">
-                <div className="row social-row">
-                    <div className="social-list align-right pb-2">
-                        <div className="soc-item">
+            <div class="media-container-row align-center mbr-white">
+                <div class="row social-row">
+                    <div class="social-list align-right pb-2">
+                        <div class="soc-item">
                             <a href={{'https':'//twitter.com/mobirise'}} target="/">
-                                <span className="socicon-twitter socicon mbr-iconfont mbr-iconfont-social"></span>
+                                <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social"></span>
                             </a>
                         </div>
-                        <div className="soc-item">
+                        <div class="soc-item">
                             <a href="https://www.facebook.com/pages/Mobirise/1616226671953247">
-                                <span className="socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
+                                <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
                             </a>
                         </div>
-                        <div className="soc-item">
+                        <div class="soc-item">
                             <a href="https://www.youtube.com/c/mobirise" target="/">
-                                <span className="socicon-youtube socicon mbr-iconfont mbr-iconfont-social"></span>
+                                <span class="socicon-youtube socicon mbr-iconfont mbr-iconfont-social"></span>
                             </a>
                         </div>
-                        <div className="soc-item">
+                        <div class="soc-item">
                             <a href="https://instagram.com/mobirise" target="/">
-                                <span className="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
+                                <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
                             </a>
                         </div>
-                        <div className="soc-item">
+                        <div class="soc-item">
                             <a href="https://plus.google.com/u/0/+Mobirise" target="/">
-                                <span className="socicon-googleplus socicon mbr-iconfont mbr-iconfont-social"></span>
+                                <span class="socicon-googleplus socicon mbr-iconfont mbr-iconfont-social"></span>
                             </a>
                         </div>
-                        <div className="soc-item">
+                        <div class="soc-item">
                             <a href="https://www.behance.net/Mobirise" target="/">
-                                <span className="socicon-behance socicon mbr-iconfont mbr-iconfont-social"></span>
+                                <span class="socicon-behance socicon mbr-iconfont mbr-iconfont-social"></span>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div className="row row-copirayt">
-                    <p className="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">
+                <div class="row row-copirayt">
+                    <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">
                         © Copyright 2020 HOMBOUND - All Rights Reserved
                     </p>
                 </div>

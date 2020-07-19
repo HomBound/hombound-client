@@ -14,7 +14,7 @@
         DROPDOWN_COLLAPSE: 'collapse.bs.nav-dropdown'
     };
 
-    var ClassName = {
+    var class = {
         IN: 'in',
         OPENED: 'opened',
         BG_COLOR: 'bg-color',
@@ -34,14 +34,14 @@
 
         if (event.type === 'resize') {
 
-            $(Selector.BODY).removeClass(ClassName.DROPDOWN_OPEN);
+            $(Selector.BODY).removeClass(class.DROPDOWN_OPEN);
             $(Selector.BASE).find(".navbar-collapse").removeClass("show");
             $(Selector.BASE)
-                .removeClass(ClassName.OPENED)
+                .removeClass(class.OPENED)
                 .find(Selector.TOGGLER).each(function(){
                     
                     $( $(this).attr('data-target') )
-                        .removeClass(ClassName.IN)
+                        .removeClass(class.IN)
                         .add(this)
                         .attr('aria-expanded', 'false');
 
@@ -54,20 +54,20 @@
 
             if (!$(this).is(Selector.FIXED_TOP)) return;
 
-            if ($(this).is(Selector.TRANSPARENT) && !$(this).hasClass(ClassName.OPENED)) {
+            if ($(this).is(Selector.TRANSPARENT) && !$(this).hasClass(class.OPENED)) {
 
                 if (scrollTop > 0) {
-                    $(this).removeClass(ClassName.BG_COLOR);
+                    $(this).removeClass(class.BG_COLOR);
                 } else {
-                    $(this).addClass(ClassName.BG_COLOR);
+                    $(this).addClass(class.BG_COLOR);
                 }
 
             }
         
             if (scrollTop > 0) {
-                $(this).addClass(ClassName.SHORT);
+                $(this).addClass(class.SHORT);
             } else {
-                $(this).removeClass(ClassName.SHORT);
+                $(this).removeClass(class.SHORT);
             }
 
         });
@@ -94,15 +94,15 @@
 
                 if (event.type == 'show') {
 
-                    $(Selector.BODY).addClass(ClassName.DROPDOWN_OPEN);
+                    $(Selector.BODY).addClass(class.DROPDOWN_OPEN);
 
-                    $(this).addClass(ClassName.OPENED);
+                    $(this).addClass(class.OPENED);
 
                 } else {
 
-                    $(Selector.BODY).removeClass(ClassName.DROPDOWN_OPEN);
+                    $(Selector.BODY).removeClass(class.DROPDOWN_OPEN);
 
-                    $(this).removeClass(ClassName.OPENED);
+                    $(this).removeClass(class.OPENED);
 
                     $(window).trigger(Event.SCROLL_DATA_API);
 
