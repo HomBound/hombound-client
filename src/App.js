@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import HomePage from "./components/homepage/HomePage";
 import ContacUs from "./components/ContactUs";
 import AboutUs from "./components/AboutUs";
+import RequestHomBound from "./components/hombounds/RequestHomBound";
 //import Account from "./components/Account";
 
 class App extends Component {
@@ -70,9 +71,10 @@ class App extends Component {
             path="/my-account"
             render={(props) => <MyAccount {...props} user={this.state.user} />}
           />
-          <Route path="/AboutUs" render={AboutUs} />
-          <Route path="/ContactUs" render={ContacUs} />
-          <Route path="/" render={Footer} />
+          <Route path="/request-hombound" component={RequestHomBound} />
+          <Route path="/AboutUs" component={AboutUs} />
+          <Route path="/ContactUs" component={ContacUs} />
+          <Route path="/" component={Footer} />
         </BrowserRouter>
       </nav>
     );
