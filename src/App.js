@@ -1,12 +1,12 @@
 import React from "react";
-import Header from "./components/RootComp/Header";
+import Header from "./components/rootComp/Header";
 import { BrowserRouter } from "react-router-dom";
 import { Route } from "react-router-dom";
-import Footer from "./components/RootComp/Footer";
-import HomePage from "./components/Homepage/HomePage";
-import ContacUs from "./components/Contact/ContactUs";
-import AboutUs from "./components/About/AboutUs";
-import Account from "./components/Account/Account";
+import Footer from "./components/rootComp/Footer";
+import HomePage from "./components/homepage/HomePage";
+import ContacUs from "./components/contact/ContactUs";
+import AboutUs from "./components/about/AboutUs";
+import Account from "./components/account/Account";
 
 function App() {
   return (

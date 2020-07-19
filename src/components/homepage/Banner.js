@@ -85,20 +85,3 @@ const Banner = props => (
 
 
 export default Banner;
-
-
-/* 
-<link rel="stylesheet" href="../../Assets/mobirise-icons-bold/mobirise-icons-bold.css"/>
-  <link rel="stylesheet" href="../../Assets/mobirise-icons/mobirise-icons.css"/>
-  <link rel="stylesheet" href="../../Assets/bootstrap/css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="../../Assets/bootstrap/css/bootstrap-grid.min.css"/>
-  <link rel="stylesheet" href="../../Assets/bootstrap/css/bootstrap-reboot.min.css"/>
-  <link rel="stylesheet" href="../../Assets/n/web/assets/gdpr-plugin/gdpr-styles.css"/>
-  <link rel="stylesheet" href="../../Assets/n/dropdown/css/style.css"/>
-  <link rel="stylesheet" href="../../Assets/n/socicon/css/styles.css"/>
-  <link rel="stylesheet" href="../../Assets/n/tether/tether.min.css"/>
-  <link rel="stylesheet" href="../../Assets/n/theme/css/style.css"/>
-  <link rel="preload" as="style" href="../../Assets/n/mobirise/css/mbr-additional.css"/>
-  <link rel="stylesheet" href="../../Assets/n/mobirise/css/mbr-additional.css" type="text/css"/>
-
-*/
