@@ -1,5 +1,5 @@
 import React from "react";
-import "../Style.css";
+import "./Style.css";
 
 const Header = (props) => (
   <section className="menu Header">
