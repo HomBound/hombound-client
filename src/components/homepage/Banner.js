@@ -41,7 +41,7 @@ const Banner = props => (
                 class="playerBox" 
                 style={{'position': 'absolute', 'z-index': '0', 'width': '1467px', 'height': '825px', 
                         'top': '0px', 'left': '0px', 'overflow': 'hidden', 'opacity': '1', 'user-select': 'none',
-                        'margin-top': '0px', 'margin-left': '-268px', 'max-width': 'initial', 
+                        'margin-top': '0px', 'margin-left': '-307px', 'max-width': 'initial', 
                         'transition-property': 'opacity', 'transition-duration': '1000ms', 'autoplay': '1'}}
         frameborder="0" 
         allowfullscreen="0" 
