@@ -1338,8 +1338,8 @@ section.lazy-placeholder:after {
 .cid-s4p83sCEh4 .btn-social + .btn {
   margin-left: .1rem;
 }
-.cid-s4p83sCEh4 [class^="socicon-"]:before,
-.cid-s4p83sCEh4 [class*=" socicon-"]:before {
+.cid-s4p83sCEh4 [className^="socicon-"]:before,
+.cid-s4p83sCEh4 [className*=" socicon-"]:before {
   line-height: 44px;
 }
 @media (max-width: 767px) {

@@ -16,9 +16,6 @@ const ContactUs = props => (
     
 </div>
 
-
-    
-
 );
 
 
