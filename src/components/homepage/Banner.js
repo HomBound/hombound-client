@@ -81,7 +81,7 @@ const Banner = props => (
                     <div class="row justify-content-md-center">
                         <div class="mbr-white col-md-10">
                             <h1 class="mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style display-1">
-                            Together We Can<br/>Stay Home<br/>Save Lifes
+                            Together We Can<br/>Stay Home<br/>Save Lives
                             </h1>
                         </div>
                     </div>

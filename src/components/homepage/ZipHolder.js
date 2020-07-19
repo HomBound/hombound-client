@@ -8,7 +8,7 @@ const ZipHolder = props => (
         <div class="row justify-content-center">
             <div class="title col-12 col-lg-8">
                 <h2 class="align-center pb-2 mbr-fonts-style display-2">
-                Check for Availivily on your area</h2>
+                Check Availability in Your Area</h2>
             </div>
         </div>
         <div class="row py-2 justify-content-center">
