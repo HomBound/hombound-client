@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Header from "./components/Header";
 import { BrowserRouter } from "react-router-dom";
 import { Route } from "react-router-dom";
 import CreateAccount from "./components/account/CreateAccount";
@@ -10,7 +9,7 @@ import Footer from "./components/Footer";
 import HomePage from "./components/homepage/HomePage";
 import ContacUs from "./components/ContactUs";
 import AboutUs from "./components/AboutUs";
-import Account from "./components/Account";
+//import Account from "./components/Account";
 
 class App extends Component {
   constructor() {
