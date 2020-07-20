@@ -6,6 +6,7 @@ import "./HomBound.css";
 
 const MyHomBounds = (props) => {
   const [myRequests, setMyRequests] = useState([]);
+
   useEffect(() => {
     const url = `${API_URL}/requests/requestedBy/${props.userId}`;
     try {
@@ -15,7 +16,7 @@ const MyHomBounds = (props) => {
     } catch (err) {
       console.error(err);
     }
-  }, []);
+  }, [props.userId]);
 
   return (
     <div>
